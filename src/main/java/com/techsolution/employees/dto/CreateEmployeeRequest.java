@@ -17,11 +17,37 @@ public class CreateEmployeeRequest {
     @Size(max = 80, message = "position must be <= 80 chars")
     private String position;
 
-    public String getName() { return name; }
-    public String getEmail() { return email; }
-    public String getPosition() { return position; }
+    private Long departmentId;
 
-    public void setName(String name) { this.name = name; }
-    public void setEmail(String email) { this.email = email; }
-    public void setPosition(String position) { this.position = position; }
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public Long getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setDepartmentId(Long departmentId) {
+        this.departmentId = departmentId;
+    }
 }
